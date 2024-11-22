@@ -1,0 +1,121 @@
+* {
+    margin: 0;
+    padding: 0;
+  }
+  
+  /* Import a stylish font from Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Pacifico&display=swap');
+
+.animated-heading {
+  font-family: 'Pacifico', cursive; /* Fancy font */
+  color: #000000; /* A vibrant color */
+  text-align: center;
+  font-size: 3.5rem;
+  margin-top: 20px;
+  letter-spacing: 2px;
+}
+/* Keyframes for fade-in and scaling */
+@keyframes fadeInScale {
+  0% {
+    opacity: 0;
+    transform: scale(0.5);
+  }
+  50% {
+    opacity: 0.5;
+    transform: scale(1.2);
+  }
+  100% {
+    opacity: 1;
+    transform: scale(1);
+  }
+}
+
+.animated-heading {
+  animation: fadeInScale 2s ease-in-out;
+}
+
+
+/*animation ended*/
+  
+  body {
+    background-color: #53be3be6;
+    text-align: center;
+  }
+  
+  .container {
+    height: 70vh;
+    display: flex;
+  
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .game {
+    height: 60vmin;
+    width: 60vmin;
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items: center;
+    gap: 1.5vmin;
+  }
+  
+  .box {
+    height: 18vmin;
+    width: 18vmin;
+    border-radius: 1rem;
+    border: none;
+    box-shadow: 0 0 1rem rgba(211, 68, 68, 0.3);
+    font-size: 8vmin;
+    color: #f50800;
+    background-color: #fffffe;
+  }
+  
+  #reset-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #080808;
+    color: #f4eeee;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #new-btn {
+    padding: 1rem;
+    font-size: 1.25rem;
+    background-color: #191913;
+    color: #fff;
+    border-radius: 1rem;
+    border: none;
+  }
+  
+  #msg {
+    color: #ffffc7;
+    font-size: 5vmin;
+  }
+  
+  .msg-container {
+    height: 100vmin;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    gap: 4rem;
+  }
+  
+  .hide {
+    display: none;
+  }
+  /*adding image */
+  body {
+    background-image: url('Images/pexels-photo-28454507.webp');
+    background-size: cover; /* This makes sure the image covers the entire page */
+    background-position: center; /* This centers the image */
+    background-repeat: no-repeat; /* This prevents the image from repeating */
+    
+  }
+  
+  body {
+    padding: 20px;
+  }
+  
